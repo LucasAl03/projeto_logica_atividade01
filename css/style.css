@@ -1,14 +1,14 @@
 #geral{
     margin: 20px auto;
     padding: 20px;
-    background-color: #c6d0d4ea;
+    background-color: #91cbe2ea;
     width: 450px;
     min-height: 450px;
     border-radius: 8px;
 }
 
 form{
-    background-color: #ffffff;
+    background-color: #94c3d6;
     padding: 20px;
     margin: 20px 0px;
     width: 400px;
@@ -28,7 +28,7 @@ label{
 #resultado{
     width: 400px;
     height: 250px;
-    background-color: #ffffff;
+    background-color: #94c3d6;
     padding: 20px;
     display: flex;
     align-items: center;
