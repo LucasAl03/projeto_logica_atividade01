@@ -9,12 +9,13 @@ formDados.addEventListener('submit', (evt)=>{
 
     let num1 = parseFloat(form_num.get('num1'))
     let num2 = parseFloat(form_num.get('num2'))
+    let num3 = parseFloat(form_num.get('num3'))
 
-    console.log(num1, num2)
+    console.log(num1, num2, num3)
 
-    let parede = parseFloat(num1 * num2) / parseFloat(2)
-    let area = parseFloat(num1 * num2)
+    let litro = parseFloat(num1 / num2)
+    let valor = parseFloat(litro * num3)
 
-    divResultado.innerHTML = parede = `Vai ser necessário ${parede.toFixed(2).replace('.', ',')} litros de tinta para pintar ${area}m²`
+    divResultado.innerHTML = litro = `Será necessário ${litro.toFixed(2).replace('.', '.')} litros para percorrer ${num1}km e custará R$${valor.toFixed(2).replace('.', ',')} reais`
 
 })

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Questão 02 </title>
+    <title> Questão 03 </title>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -13,19 +13,27 @@
 <body>
     <div id="geral">
 
-    <h3> Faça um algoritmo que leia a largura e altura de uma
-        parede, calcule e mostre a área a ser pintada e a
-        quantidade de tinta necessária para o serviço. Considere
-        que cada litro de tinta pinta uma área de 2metros
-        quadrados. </h3>
+    <h3> O usuário deverá informar:
+        A distância a ser percorrida (em quilômetros);
+        O consumo médio do veículo (em km/l);
+        O preço do litro do combustível.
+        Com base nessas informações, o algoritmo deve calcular e
+        exibir:
+        A quantidade de combustível necessário para percorrer
+        o trajeto;
+        O valor total a pagar com combustível para esse
+        deslocamento. </h3>
         
     <form id="formulario">
 
-        <label for="num1">Altura (m) </label>
+        <label for="num1"> Distância em km: </label>
         <input type="text" name="num1" id="num1">
 
-        <label for="num2">Largura (m) </label>
+        <label for="num2"> Consumo médio do veículo (em km/l) </label>
         <input type="text" name="num2" id="num2">
+
+        <label for="num3"> Preço do litro do combustível </label>
+        <input type="text" name="num3" id="num3">
 
         <button type="submit"> Calcular </button>
         <button type="reset"> Limpar </button>
