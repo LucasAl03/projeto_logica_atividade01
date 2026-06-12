@@ -12,10 +12,20 @@ formDados.addEventListener('submit', (evt)=>{
     let num2 = parseFloat(form_num.get('num2'))
     let num3 = parseFloat(form_num.get('num3'))
 
-    console.log(Nome, num1, num2, num3)
+    console.log(Nome, num1, num2)
 
     let imc = parseFloat(num1) /parseFloat(num2 * num2)
 
-    divResultado.innerHTML = imc = ` ${imc} `
+    if(imc < 20){
+        divResultado.innerHTML = `${Nome} está Abaixo do Peso. IMC de ${imc.toFixed(2)}`
+    }else if((imc >= 20) && (imc < 25)){
+        divResultado.innerHTML = `${Nome} está Normal. IMC de ${imc.toFixed(2)}`
+    }else if((imc >= 25) && (imc < 30)){
+        divResultado.innerHTML = `${Nome} está com Excesso de Peso. IMC de ${imc.toFixed(2)}`
+    }else if((imc >= 30) && (imc < 35)){
+        divResultado.innerHTML = `${Nome} está com Obesidade. IMC de ${imc.toFixed(2)}`
+    }else{
+        divResultado.innerHTML = ` ${Nome} está com Obesidade Mórbida. IMC de ${imc.toFixed(2)}`
+    }
 
 })
