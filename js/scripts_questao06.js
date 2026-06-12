@@ -14,14 +14,8 @@ formDados.addEventListener('submit', (evt)=>{
 
     console.log(Nome, num1, num2, num3)
 
-    
+    let imc = parseFloat(num1) /parseFloat(num2 * num2)
 
-    let media = parseFloat(num1 + num2 + num3) / parseFloat(3)
-        if (media >= 6){
-            alert(`${Nome} foi Aprovado(a)`)
-        }else{
-            alert(`${Nome} foi Reprovado(a)`)
-        }
-    divResultado.innerHTML = media = `A média de ${Nome} foi ${media.toFixed(2).replace('.', '.')}. ${Nome} foi ${media >= 6 ? ("Aprovado(a)") : ("Reprovado(a)")}.`
-    
+    divResultado.innerHTML = imc = ` ${imc} `
+
 })
